@@ -1,0 +1,33 @@
+---
+const { ident, items } = Astro.props;
+
+export interface NavItem {
+  href: string;
+  text: string;
+  ident: string;
+  sub?: Array<NavItem>;
+}
+interface Props {
+  items: Array<NavItem>;
+  ident: string;
+}
+---
+
+<ul>
+  {
+    items.map((item) =>
+      item.sub && item.ident === ident ? (
+        <li>
+          {item.text}
+          <Astro.self ident={item.ident} items={item.sub} />
+        </li>
+      ) : item.ident === ident ? (
+        <li>{item.text}</li>
+      ) : (
+        <li>
+          <a href={item.href}>{item.text}</a>
+        </li>
+      )
+    )
+  }
+</ul>

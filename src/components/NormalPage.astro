@@ -1,0 +1,18 @@
+---
+import SideNav from "./SideNav.astro";
+import martian from "../assets/img/martian.png";
+
+const { ident, date } = Astro.props;
+
+const app_menu: [] = [];
+---
+
+<nav id="sidebar" class="side">
+  <a href="/"><span>Home</span><img src={martian.src} /></a>
+  <SideNav items={app_menu} ident={ident} />
+  <slot name="side" />
+</nav>
+<div class="body">
+  <slot />
+  <div class="update">Last update: {date}</div>
+</div>
