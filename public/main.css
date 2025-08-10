@@ -21,14 +21,14 @@ body {
   color: #bbb;
   background-color: rgb(54, 50, 65); /* 10PB 2/2 */
   font-family: "Vollkorn", Tinos, serif;
-  font-size: 18px;
-  margin: 20px;
+  /* font-size: 18px; */
+  margin: 1rem;
 }
 
 pre,
 code {
   font-family: "Ubuntu Mono", monospace;
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
 a,
@@ -67,7 +67,7 @@ h6 {
   font-weight: 400;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  margin: 0 0 16px 0;
+  margin: 0 0 1rem 0;
   color: rgb(173, 167, 228); /* 10PB 7/8 */
 }
 
@@ -235,6 +235,7 @@ div.body {
 }
 .card p {
   margin: 0;
+  hyphens: auto;
 }
 
 div.update {

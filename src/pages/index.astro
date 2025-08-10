@@ -1,29 +1,36 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import NormalPage from "../components/NormalPage.astro";
-import ShadeBob from "../components/ShadeBob.astro";
+import NormalPage from "@components/NormalPage.astro";
+import ShadeBob from "@components/ShadeBob.astro";
 ---
 
-<Layout title="Martin's Stuff">
-  <NormalPage date="2025-08-09">
-    <Fragment slot="side">
-      <hr />
-      <p
-        style="font-size: 15px; line-height: 22px; text-align: justify; hyphens: auto;"
+<NormalPage title="Martin's Stuff" date="2025-08-09">
+  <Fragment slot="side">
+    <hr />
+    <p class="note">
+      <b>Techie Note:</b> This site is an <a href="https://astro.build/"
+        >Astro</a
       >
-        <b>Techie Note:</b> This site is an <a href="https://astro.build/"
-          >Astro</a
-        >
-        app written in <a href="https://www.typescriptlang.org/"
-          >Type&shy;Script</a
-        > and hosted by <a href="https://vercel.com/">Vercel</a> with data stored
-        at <a href="https://turso.tech/">Turso</a>.&nbsp; If you are curious you
-        can browse the source code on <a
-          href="https://github.com/martinkeefe/astro-me">GitHub</a
-        >.
-      </p>
-    </Fragment>
+      app written in <a href="https://www.typescriptlang.org/"
+        >Type&shy;Script</a
+      > and hosted by <a href="https://vercel.com/">Vercel</a> with data stored at
+      <a href="https://turso.tech/">Turso</a>.
+    </p>
+    <p class="note">
+      If you are curious you can browse the source code on <a
+        href="https://github.com/martinkeefe/astro-me">GitHub</a
+      >.
+    </p>
+  </Fragment>
 
-    <ShadeBob />
-  </NormalPage>
-</Layout>
+  <ShadeBob />
+</NormalPage>
+
+<style>
+  p.note {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    line-height: 1.35rem;
+    text-align: justify;
+    hyphens: auto;
+  }
+</style>

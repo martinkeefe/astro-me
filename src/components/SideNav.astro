@@ -1,14 +1,10 @@
 ---
+import type { NavItem } from "../app";
+
 const { ident, items } = Astro.props;
 
-export interface NavItem {
-  href: string;
-  text: string;
-  ident: string;
-  sub?: Array<NavItem>;
-}
 interface Props {
-  items: Array<NavItem>;
+  items: NavItem[];
   ident: string;
 }
 ---

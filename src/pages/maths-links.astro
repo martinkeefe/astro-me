@@ -1,0 +1,88 @@
+---
+import NormalPage from "@components/NormalPage.astro";
+
+import bourke from "@assets/img/math-bourke.png";
+import bugman from "@assets/img/math-bugman.png";
+import miqel from "@assets/img/math-miqel.png";
+import dim from "@assets/img/math-dim.png";
+import jos from "@assets/img/math-jos.png";
+import beth from "@assets/img/math-beth.png";
+import anti from "@assets/img/math-anti.png";
+---
+
+<NormalPage title="Martin's Maths Links" date="2025-08-09" ident="maths">
+  <h1>Maths Links</h1>
+
+  <div class="card">
+    <img src={bourke.src} />
+    <p>
+      <b><a href="http://paulbourke.net/">Paul Bourke</a></b>: The inspiration
+      for my own web site. Paul has been adding stuff to his site since the 90s.
+      Wonderful collection of articles on 2D and 3D maths as well as some source
+      code for C and <a href="https://www.povray.org/">POV-Ray</a>.
+    </p>
+  </div>
+
+  <div class="card">
+    <img src={bugman.src} />
+    <p>
+      <b><a href="http://www.bugman123.com/index.html">Paul Nylander</a></b>:
+      Lots of great images and animations, often with <a
+        href="https://www.wolfram.com/mathematica/">Mathematica</a
+      > and <a href="https://www.povray.org/">POV-Ray</a> code.
+    </p>
+  </div>
+
+  <div class="card">
+    <img src={miqel.src} />
+    <p>
+      <b
+        ><a
+          href="http://web.archive.org/web/20160110200622/http://miqel.com/fractals_math_patterns/visual_math_varieties.html"
+          >Michael Coleman</a
+        ></b
+      > An eclectic site full of interesting stuff. It seems to have disappeared
+      so this is a link to the <a href="https://web.archive.org/"
+        >Wayback Machine</a
+      >.
+    </p>
+  </div>
+
+  <div class="card">
+    <img src={dim.src} />
+    <p>
+      <b><a href="http://www.dimensions-math.org/Dim_E.htm">Dimensions</a></b>:
+      A walk through mathematics. A film for a wide audience in nine chapters.
+      Two hours of maths, that take you gradually up to the fourth dimension.
+      Mathe&shy;matical vertigo guaranteed!
+    </p>
+  </div>
+
+  <div class="card">
+    <img src={jos.src} />
+    <p>
+      <b><a href="http://www.josleys.com/index.php">Jos Leys</a></b>: More
+      images by one of the people responsible for the <a
+        href="http://www.dimensions-math.org/">Dimensions</a
+      > and <a href="http://www.chaos-math.org/">Chaos</a> films.
+    </p>
+  </div>
+
+  <div class="card">
+    <img src={beth.src} />
+    <p>
+      <b><a href="http://www.bathsheba.com/">Bathsheba Grossman</a></b>: The art
+      of geometry. Stunning 3D printed metal sculptures and laser etched
+      crystals.
+    </p>
+  </div>
+
+  <div class="card">
+    <img src={anti.src} />
+    <p>
+      <b><a href="http://www.antiprism.com/">Antiprism</a></b>: Open source
+      polyhedron modelling software. Create, transform, analyse, and visualise
+      polyhedra.
+    </p>
+  </div>
+</NormalPage>
