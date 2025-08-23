@@ -1,0 +1,31 @@
+---
+import Layout from "@layouts/Layout.astro";
+import SideNav from "@components/SideNav.astro";
+import martian from "@assets/img/martian.png";
+import { app } from "@app";
+
+const { title, ident, date } = Astro.props;
+---
+
+<Layout title={title}>
+  <nav id="sidebar" class="side">
+    <a href="/"><span>Home</span><img src={martian.src} /></a>
+    <h4>Contents</h4>
+    <ul>
+      <li><a href="/parasurf/intro">Introduction</a></li>
+      <li><a href="/parasurf/sphere">Sphere</a></li>
+      <li><a href="/parasurf/torus">Torus</a></li>
+      <li><a href="/parasurf/elliptic-torus">Elliptic Torus</a></li>
+      <li><a href="/parasurf/limpet-torus">Limpet Torus</a></li>
+      <li><a href="/parasurf/supertoroid">Supertoroid</a></li>
+      <li><a href="/parasurf/mobius">Möbius Strip</a></li>
+      <li><a href="/parasurf/boys-1">Boy&rsquo;s Surface (1)</a></li>
+    </ul>
+    <slot name="side" />
+  </nav>
+  <div class="body">
+    <h1>Parametric Surfaces</h1>
+    <slot />
+    <div class="update">Last update: {date}</div>
+  </div>
+</Layout>

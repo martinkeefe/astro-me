@@ -9,8 +9,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/vercel": "^8.2.5",
+    "@astrojs/mdx": "^4.3.3",
+    "@astrojs/vercel": "^8.2.6",
     "@vercel/analytics": "^1.5.0",
-    "astro": "^5.12.9"
+    "astro": "^5.12.9",
+    "rehype-katex": "^7.0.1",
+    "rehype-mathjax": "^7.1.0",
+    "remark-math": "^6.0.0",
+    "three": "^0.179.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.179.0"
   }
 }

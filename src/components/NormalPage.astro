@@ -9,7 +9,7 @@ const { title, ident, date } = Astro.props;
 
 <Layout title={title}>
   <nav id="sidebar" class="side">
-    <a href="/"><span>Home</span><img src={martian.src} /></a>
+    <a href="/"><span class="home">Home</span><img src={martian.src} /></a>
     <SideNav items={app.menu} ident={ident} />
     <slot name="side" />
   </nav>

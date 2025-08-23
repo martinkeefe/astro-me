@@ -1,0 +1,47 @@
+import ParasurfPage from "@components/ParasurfPage.astro";
+
+<ParasurfPage title="MK : Parasurfaces : Intro" ident="parasurf-intro" date="2016-09-25">
+## Introduction
+
+A parametric surface is a 3-dimensional surface defined by a set of
+parametric equations with two parameters. These equations map points
+$(u,v)$ in some 2-dimensional space $D$ (the _domain_) to the
+position vectors of the points on the 3-dimensional surface $S$. This
+parametric representation can be written:
+
+
+  > $\vec{r}(u,v) \:=\: x(u,v)\,\vec{i} + y(u,v)\,\vec{j} + z(u,v)\,\vec{k}$
+
+
+The vectors $\vec{i}$, $\vec{j}$ and $\vec{k}$ are the [basis
+vectors](https://en.wikipedia.org/wiki/Basis_%28linear_algebra%29)
+of the 3-dimensional space that the surface is embedded in. For
+Cartesian coordinates in the normal [Euclidean space](https://en.wikipedia.org/wiki/Euclidean_space)
+$\mathbb{R}^3$ these are the familiar X, Y and Z axes.
+
+For example, the parametric representation of a cone is:
+
+  > $\vec{r}(u,v) \:=\: u\cos v\,\vec{i} + u\sin v\,\vec{j} + u\,\vec{k}$
+
+So the parametric equations are:
+
+  > $x \:=\: u\cos v$ <br/>
+  > $y \:=\: u\sin v$ <br/>
+  > $z \:=\: u$
+
+And the domain is:
+
+  > $u \:\in\: \mathbb{R}$ <br />
+  > $v \;\in\: \mathbb{R}, \; -\pi \leq v \lt \pi$
+
+And here it is (with $u$ limited to the interval -2 to +2):
+
+<div id="ps-shape"></div>
+
+### See Also
+ * [Tore Nordstrand's collection of algebraic and parametric surfaces](https://web.archive.org/web/20241130231832/http://jalape.no/math/surfaces)
+ * [Wikipedia](https://en.wikipedia.org/wiki/Parametric_surface)
+ * [Paul's online math notes](http://tutorial.math.lamar.edu/Classes/CalcIII/ParametricSurfaces.aspx)
+ * [Surfaces mathématiques](http://nliautaud.fr/wiki/travaux/surfaces_mathematiques)
+
+</ParasurfPage>

@@ -14,7 +14,7 @@ interface Props {
     items.map((item) =>
       item.sub && item.ident === ident ? (
         <li>
-          {item.text}
+          <span>{item.text}</span>
           <Astro.self ident={item.ident} items={item.sub} />
         </li>
       ) : item.ident === ident ? (
